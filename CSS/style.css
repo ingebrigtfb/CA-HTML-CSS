@@ -1,0 +1,254 @@
+
+body{
+    background-color: #1A1A1A;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    font-family: 'Roboto' , sans-serif;
+    
+    
+}
+
+h2 {
+    color: #fafafa;
+
+}
+
+
+/*/////////////////////////*/
+/*////////// HEADER /////////*/
+/*/////////////////////////*/
+
+header {
+    background-color: #1a1a1a;
+    height: 140px;
+    border-bottom: solid 1px #fafafa;
+
+}
+
+.header-logo {
+    
+    height: 100px;
+    margin: 30px 25px 25px 20px;
+    
+}
+
+header > .icons {
+  font-size: 30px;
+  margin: -60px 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+.icons i {
+    margin: 0 10px; /* Space between the icons */
+}
+
+/*/////////////////////////*/
+/*////////// Nav /////////*/
+/*/////////////////////////*/
+
+
+nav {
+    display: none;
+    position: absolute;
+    top: 144px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #1a1a1a99;
+}
+
+#hamburger-menu {
+    display: none;
+    
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+    
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 0px; /* Adjust top margin */
+
+    
+}
+
+nav ul button a {
+    text-decoration: none; /* Get rid of underline */
+    color: inherit; 
+    
+
+
+}
+
+nav ul button {
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    width: 350px;
+    height: 60px;
+    border: none;
+    background-color: #ff9000; 
+    color: #fafafa;
+    cursor: pointer;
+  
+
+}
+/*/////////////////////////*/
+/*////////// MAIN /////////*/
+/*/////////////////////////*/
+
+ .add-container {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.add {
+    display: flex;/*For text and picture to align*/
+    align-items: center;/*For text and picture to align*/
+    justify-content: center; /*For text and picture to align*/
+    flex-direction: column;
+    text-align: center;
+    width: 393px;
+    height: 262px;
+    background: url(../Pictures/Squareeyes\ ad\ pic.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+       
+    
+}
+
+
+
+.films-button button {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border-style: none; 
+    
+
+}
+
+.add h2 {
+    font-weight: 600;
+    color: #fafafa;
+    font-size: 20px;
+    max-width: 200px;
+       
+}
+
+span {
+    color: #ff9000; /*/to get two colors on text/*/
+}
+
+.index-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.movie-posters {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 318px;
+    gap: 20px;
+    
+    
+}
+.movie-posters img {
+    width: 144px;
+    height: 215px;
+}
+
+
+/*/////////////////////////*/
+/*////////// FOOTER /////////*/
+/*/////////////////////////*/
+
+footer {
+    height: 150px;
+    color: #fafafa;
+    background-color: #1a1a1a;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    border-top: solid 1px #fafafa; /*line between main and footer */ 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    
+    
+    
+    
+}
+
+.foot-container ul {
+    list-style: none;
+    margin-right:  15px;
+    padding-left: 15px
+
+
+}
+.foot-container ul a {
+    color: #fafafa;
+    text-decoration: none;
+    
+}
+
+
+.foot-container {
+    margin-top: 5px; 
+
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 700px;
+    margin-bottom: 10px; 
+}
+
+
+/*/////ABOUT/////*/
+
+
+
+main p {
+    color: #fafafa;
+    
+
+
+}
+
+
+
+
+
+
+
+
+
