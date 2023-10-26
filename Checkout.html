@@ -3,9 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/da289bebbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
+
+
 <body>
+
+
+    <header>
     
+    <a href="Index.html">
+            <img src="/LOGO/SquareEyes_Logo2.png" class="header-logo" alt="Square Eyes Logo">
+    </a>
+        
+    <div class="icons">
+        <i class="fa-solid fa-user" style= "color: #ff9900;"></i>
+        <i class="fa-solid fa-cart-shopping" style="color: #ff9900;"></i>
+        <label for="hamburger-menu">
+            <i class="fa-solid fa-bars" style="color: #ff9900;" ></i>
+        </label>
+        
+    </div> 
+        <input type="checkbox" id="hamburger-menu">
+        
+        
+
+
+        
+        <nav>
+            
+
+            <div class="nav-cont">
+                <a href="./Index.html">Home</a>
+                <a href="./All-movies.html">All Movies</a>
+                <a href="./About.html">About Us</a>
+                <a href="./Contact.html">Contact Us</a>
+            
+            </div>
+        </nav>
+        
+        
+        
+    
+     </header>
+   
+    <main class="checkout-cont">
+    <div class="overlay-box-co">
+            <h1>ENTER PAYMENT INFO</h1>
+            <p>Credit or Debit Card Information</p>
+        
+
+       <form action="" class="checkout-form">
+        
+            <label for="name"></label>
+            <input type="text"  name="name" id="name" placeholder="CARD HOLDERS FULL NAME"> 
+        
+        
+            <label for="card"></label>
+            <input type="text"  name="card" id="card" placeholder="CARD NUMBER"> 
+        
+        <div class="date-cvv">
+        
+            <label for="date"></label>
+            <input type="text"  name="MM/YY" id="mmyy" placeholder="MM/YY"> 
+        
+        
+            <label for="cvv"></label>
+            <input type="text"  name="CVV" id="cvv" placeholder="CVV"> 
+        
+         </div>
+        <p>Billing Information</p>
+
+        
+            <label for="fullname"></label>
+            <input type="text"  name="fullname" id="fullname" placeholder="FULL NAME"> 
+        
+        
+            <label for="address"></label>
+            <input type="text"  name="address" id="address" placeholder="ADDRESS"> 
+        
+        <div class="zip-city">
+        
+            <label for="zipcode"></label>
+            <input type="text"  name="zipcode" id="zipcode" placeholder="ZIP CODE"> 
+        
+        
+            <label for="city"></label>
+            <input type="text"  name="city" id="city" placeholder="CITY"> 
+        
+         </div>
+            <label for="phone"></label>
+            <input type="text"  name="phone" id="phone" placeholder="PHONE NUMBER"> 
+        
+
+        <div class="total-box">
+
+            <div class="upper-info">
+                <p>x1</p>
+                <p>$8.99</p>
+                <p>THE BATMAN (2022)</p>
+                <img src="/Pictures/Square_Eyes_Cover2.jpeg" alt="">
+            </div>
+
+            <div class="lower-info">
+                <p>TOTAL</p>
+                <p>$8.99</p>
+            </div>
+
+        </div>
+
+        <div class="input-line">
+            <label for="redeem"></label>
+            <input type="text"  name="redeem" id="redeem" placeholder="REDEEM CODE"> 
+        </div>
+
+    </form>
+
+       
+<div class="purchase-button">
+    <a href="/Checkout-sucsess.html">PURCHASE NOW</a>
+</div>   
+        
+    </div> 
+    </main>
+    
+    
+    <footer>
+        
+           
+    <div class="all-footers">
+        <div class="foot-container">
+            <h2>NAVIGATION</h2>         
+            <ul>
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="/All-movies.html">Films</a></li>
+            <li><a href="/About.html">About Us</a></li>
+            <li><a href="/Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+            
+        <div class="foot-container">
+            <h2>SUPPORT</h2>
+            <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Help Center</a></li>
+            </ul>
+        </div>
+            
+        <div class="foot-container"> 
+            <h2>SOCIALS</h2>
+            <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            </ul>
+
+        </div>
+    </div>
+        <p>&copy;Square Eyes 2023</p>
+    
+
+        </footer>
+ 
+    
+
+
 </body>
+
+
+
+
+
 </html>

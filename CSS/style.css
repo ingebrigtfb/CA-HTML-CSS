@@ -12,7 +12,7 @@ body{
 }
 
 h2 {
-    color: #fafafa;
+    color: #fafafa; /*/Standard for all h2/*/
 
 }
 
@@ -49,7 +49,7 @@ header > .icons {
 }
 
 /*/////////////////////////*/
-/*////////// Nav /////////*/
+/*/////// Nav header /////*/
 /*/////////////////////////*/
 
 
@@ -74,41 +74,37 @@ nav {
 }
 
 
-nav ul {
+.nav-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 50px 0 0 0px; /* Adjust top margin */
 
     
 }
 
-nav ul button a {
-    text-decoration: none; /* Get rid of underline */
-    color: inherit; 
-    
 
 
-}
-
-nav ul button {
+.nav-cont a {
     font-size: 30px;
     border-radius: 5px;
     margin: 10px 0;
     padding: 5px;
-    text-align: center;
-    width: 350px;
-    height: 60px;
+    width: 300px;
+    height: 40px;
     border: none;
     background-color: #ff9000; 
     color: #fafafa;
     cursor: pointer;
+    text-decoration: none; /* Get rid of underline */
+    
   
 
 }
 /*/////////////////////////*/
-/*////////// MAIN /////////*/
+/*/////// MAIN INDEX /////*/
 /*/////////////////////////*/
 
  .add-container {
@@ -138,7 +134,7 @@ nav ul button {
 
 
 
-.films-button button {
+.films-button a {
     color: #fafafa;
     background-color: #ff9000;
     font-size: 15px;
@@ -146,8 +142,9 @@ nav ul button {
     margin-top: 20px;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
-    border-style: none; 
-    
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none;
 
 }
 
@@ -159,11 +156,11 @@ nav ul button {
        
 }
 
-span {
+.orange-color {
     color: #ff9000; /*/to get two colors on text/*/
 }
 
-.index-movies {
+.home-movies {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +184,7 @@ span {
 
 
 /*/////////////////////////*/
-/*////////// FOOTER /////////*/
+/*////////// FOOTER ///////*/
 /*/////////////////////////*/
 
 footer {
@@ -197,14 +194,16 @@ footer {
     width: 100%;
     font-size: 12px;
     font-weight: 400;
-    border-top: solid 1px #fafafa; /*line between main and footer */ 
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
+    border-top: solid 1px #fafafa; /*line between main and footer */
     
-    
-    
-    
+
+
+}
+
+.all-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .foot-container ul {
@@ -222,27 +221,492 @@ footer {
 
 
 .foot-container {
-    margin-top: 5px; 
-
+    margin-top: 5px;
+    margin: 0 20px;
 }
 
 footer h2 {
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 500;
     margin-bottom: 10px; 
 }
 
+footer p {
+    margin-left: 20px;
+}
 
-/*/////ABOUT/////*/
 
 
 
-main p {
-    color: #fafafa;
-    
+/*/////////////////////////*/
+/*//// ALL MOVIES PAGE ///*/
+/*/////////////////////////*/
 
+.main-all-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+
+.bar { /*/Center alignment/*/
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    
+}
+
+#search-bar {
+    color: #fafafa; /*Color change when typing*/
+}
+
+#search-bar::placeholder { /*/Change color on the text/*/
+    color: #fafafa;
+    
+}
+
+#search-bar:focus { /*/To get rid of blue outlines/*/
+    outline: none;
+}
+
+.bar input {
+    background-color: #ff900099;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    text-align: left;
+    width: 145px;
+    height: 25px;
+    padding-left: 25px;
+}
+
+.fa-magnifying-glass { /*//To get the icon inside the searchbar/*/
+    position: absolute;
+    color: #fafafa;
+    margin: 4px;
+}
+
+.select-genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    
+
+}
+
+.select-genreh2 {
+    font-size: 15px;
+}
+
+.dropdown label {
+    background-color: #ff9000;
+    color: #fafafa;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin: 20px;
+    padding-right: 20px;
+    padding: 0 10px;
+}
+
+.dropdown a {
+    display: block;
+    color: #fafafa;
+    text-decoration: none;
+    
+
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #1a1a1a; 
+    min-width: 70px;
+    display: none;
+
+}
+#dropdown-checkbox {
+    display: none;
+    
+    
+}
+
+#dropdown-checkbox:checked ~ .dropdown-content {
+    display: block;
+    
+}
+
+.all-movies { /*/To center and align all movies on the site/*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+    
+}
+
+/*/////ABOUT US PAGE/////*/ 
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    
+
+}
+.main-about img {
+    width: 354px;
+    height: 236px;
+}
+
+.main-about h1 {
+    font-size: 24px;
+    
+}
+
+main p {
+    color:#fafafa;
+    font-size: 24px;
+    font-weight: 200;
+    display: flex;
+    text-align: left;
+    padding: 10px 65px 10px 65px;
+    
+    
+}
+
+
+/*/////CONTACT US PAGE/////*/ 
+
+.body-contact-us {
+    background-image: url(/Pictures/photo\ family.jpg);
+    
+}
+
+.main-contact {
+    background-color:rgb(26, 26, 26, 0.9);
+    
+}
+
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+ 
+main h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.main-contact i {
+    color: #fafafa; /*/Icon color/*/
+    font-size: 54px;
+
+}
+.main-contact p {
+    font-size: 24px;
+    font-weight: 200;
+}   
+/*////////////////////////////*/
+/*/////Product detail page////*/
+/*////////////////////////////*/
+
+.batman-product { /*/Aligns h1, image and cta/*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.batman-product h1 {
+    font-size: 20px;
+}
+
+.batman-background img {
+    width: 100%;
+    position: absolute;
+    top: 141px;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+
+.batman-cover img {
+    width: 188.98px ;
+    height: 280.45px;
+    padding: 0 0 20px 0 ;
+    
+}
+
+.cart-button a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none;
+    
+}
+
+
+
+.desctription-box { 
+    background-color: #282828;
+    width: 100%;
+    height: 130px;
+    margin-top: 80px;
+    border-radius: 10px;
+    
+
+}
+
+.desctription-box p { /*/Size and padding of text in textbox/*/
+    font-size: 12px; 
+    padding: 15px;
+
+}
+
+.batman-trailer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.batman-trailer h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.trailer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer-image img {
+    width: 230px;
+    filter: blur(1px);
+    display: block;
+
+}
+
+.batman-trailer i {
+    font-size: 34px;
+    color: #fafafa;
+    position: absolute;
+    
+    
+}
+
+
+/*////////////////////////////*/
+/*///// CHECKOUT PAGE ////////*/
+/*////////////////////////////*/
+
+.checkout-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-box-co {
+    background-color: #282828;
+    width: 338px;
+    height: 842px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+       
+}
+
+.overlay-box-co p {
+    font-size: 12px;
+    font-weight: 200;
+    
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
+    text-align: center;
+}
+
+.date-cvv { /*/ So that the MM/YY and cvv can stand next to each other/*/
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.zip-city {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+#name, #card, #fullname, #address, #phone {
+    width: 299px;
+    height: 33px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: #fafafa;
+}
+
+
+
+#mmyy, #cvv, #zipcode, #city, #redeem {
+    width: 140px;
+    height: 33px;
+    border-style: none;
+    outline-style: none;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    color: #fafafa;
+    
+}
+
+.purchase-button {
+    padding-top: 20px;
+}
+
+.purchase-button a {
+    color: #fafafa;
+    background-color: #ff9000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+
+/*////////////////////////////*/
+/*// CHECKOUT SUCSESS PAGE ///*/
+/*////////////////////////////*/
+
+.sucsess-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-box-cos { /*/Overlay box for checkout sucsess/*/
+    background-color: #282828;
+    width: 338px;
+    height: 811px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;    
+}
+
+.conf-text p {
+    font-size: 14px;
+    padding: 15px 15px 15px 15px;
+    margin: 8px;
+    
+}
+.overlay-box-cos i { /*/Check icon color and sizing/*/ 
+    color: #33ff00;
+    font-size: 70px;
+    
+}
+
+.overlay-box-cos h1 {
+    font-size: 24px;
+    
+}
+
+.total-box {
+    background-color: #1A1A1A;
+    width: 299px;
+    height: 155px;
+    border-radius: 10px;
+    
+}
+
+.upper-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.upper-info img {
+    width: 32px;
+    height: 48px;
+    padding: 10px;
+}
+
+.upper-info p {
+    font-size: 14px;
+    margin: 20px -55px 40px;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+
+.lower-info {
+    border-top: solid 1px white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.lower-info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
