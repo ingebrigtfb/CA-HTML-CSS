@@ -53,85 +53,65 @@
     
      </header>
    
-    <main class="checkout-cont">
-    <div class="overlay-box-co">
+<main class="checkout-cont">
+<div class="overlay-box-co">
             <h1>ENTER PAYMENT INFO</h1>
             <p>Credit or Debit Card Information</p>
         
+       <form action=""class="checkout-form">
+        
+                    <input type="text"  name="name" id="name" placeholder="CARD HOLDERS FULL NAME"> 
+                    <input type="text"  name="card" id="card" placeholder="CARD NUMBER"> 
+        
+                <div class="date-cvv">
 
-       <form action="" class="checkout-form">
+                    <input type="text"  name="MM/YY" id="mmyy" placeholder="MM/YY"> 
         
-            <label for="name"></label>
-            <input type="text"  name="name" id="name" placeholder="CARD HOLDERS FULL NAME"> 
+                    <input type="text"  name="CVV" id="cvv" placeholder="CVV"> 
         
+                </div>
+                    <p>Billing Information</p>
+                    <input type="text"  name="fullname" id="fullname" placeholder="FULL NAME"> 
         
-            <label for="card"></label>
-            <input type="text"  name="card" id="card" placeholder="CARD NUMBER"> 
-        
-        <div class="date-cvv">
-        
-            <label for="date"></label>
-            <input type="text"  name="MM/YY" id="mmyy" placeholder="MM/YY"> 
+                    <input type="text"  name="address" id="address" placeholder="ADDRESS"> 
         
         
-            <label for="cvv"></label>
-            <input type="text"  name="CVV" id="cvv" placeholder="CVV"> 
+                <div class="zip-city">
+                    <input type="text"  name="zipcode" id="zipcode" placeholder="ZIP CODE"> 
         
-         </div>
-        <p>Billing Information</p>
+                    <input type="text"  name="city" id="city" placeholder="CITY"> 
+                </div>
+                    <input type="text"  name="phone" id="phone" placeholder="PHONE NUMBER"> 
+            
 
-        
-            <label for="fullname"></label>
-            <input type="text"  name="fullname" id="fullname" placeholder="FULL NAME"> 
-        
-        
-            <label for="address"></label>
-            <input type="text"  name="address" id="address" placeholder="ADDRESS"> 
-        
-        <div class="zip-city">
-        
-            <label for="zipcode"></label>
-            <input type="text"  name="zipcode" id="zipcode" placeholder="ZIP CODE"> 
-        
-        
-            <label for="city"></label>
-            <input type="text"  name="city" id="city" placeholder="CITY"> 
-        
-         </div>
-            <label for="phone"></label>
-            <input type="text"  name="phone" id="phone" placeholder="PHONE NUMBER"> 
-        
+            <div class="total-box">
 
-        <div class="total-box">
+                <div class="upper-info">
+                    <p>x1</p>
+                    <p>$8.99</p>
+                    <p>THE BATMAN (2022)</p>
+                    <img src="/Pictures/Square_Eyes_Cover2.jpeg" alt="">
+                </div>
 
-            <div class="upper-info">
-                <p>x1</p>
-                <p>$8.99</p>
-                <p>THE BATMAN (2022)</p>
-                <img src="/Pictures/Square_Eyes_Cover2.jpeg" alt="">
+                <div class="lower-info">
+                    <p>TOTAL</p>
+                    <p>$8.99</p>
+                </div>
+
             </div>
 
-            <div class="lower-info">
-                <p>TOTAL</p>
-                <p>$8.99</p>
+            <div class="input-line">
+                <input type="text"  name="redeem" id="redeem" placeholder="REDEEM CODE"> 
             </div>
 
-        </div>
-
-        <div class="input-line">
-            <label for="redeem"></label>
-            <input type="text"  name="redeem" id="redeem" placeholder="REDEEM CODE"> 
-        </div>
-
-    </form>
-
+        </form>
        
-<div class="purchase-button">
-    <a href="/Checkout-sucsess.html">PURCHASE NOW</a>
-</div>   
+        <div class="purchase-button">
+        <a href="/Checkout-sucsess.html">PURCHASE NOW</a>
+        </div>   
         
     </div> 
-    </main>
+</main>
     
     
     <footer>

@@ -529,7 +529,7 @@ main h1 {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-       
+    
 }
 
 .overlay-box-co p {
@@ -538,31 +538,31 @@ main h1 {
     
 }
 
+
 .checkout-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
+
 
 #name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
     text-align: center;
 }
 
-.date-cvv { /*/ So that the MM/YY and cvv can stand next to each other/*/
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+#fullname {
+    margin-top: -10px ;
 }
 
-.zip-city {
-    padding-top: 10px;
-    display: flex;
-    gap: 5px;
+#mmyy { 
+    margin-right: 10px;
+}
 
+#zipcode {
+    margin-right: 10px; 
 }
 
 
@@ -576,8 +576,6 @@ main h1 {
     color: #fafafa;
 }
 
-
-
 #mmyy, #cvv, #zipcode, #city, #redeem {
     width: 140px;
     height: 33px;
@@ -589,8 +587,8 @@ main h1 {
     
 }
 
-.purchase-button {
-    padding-top: 20px;
+.purchase-button { /*Gets space between the redeem and purchase/*/
+    margin-top: 40px;
 }
 
 .purchase-button a {
@@ -633,7 +631,7 @@ main h1 {
 .conf-text p {
     font-size: 14px;
     padding: 15px 15px 15px 15px;
-    margin: 8px;
+    margin: 6px;
     
 }
 .overlay-box-cos i { /*/Check icon color and sizing/*/ 
@@ -652,6 +650,7 @@ main h1 {
     width: 299px;
     height: 155px;
     border-radius: 10px;
+    
     
 }
 
