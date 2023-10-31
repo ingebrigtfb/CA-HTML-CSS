@@ -16,6 +16,11 @@ h2 {
 
 }
 
+h1 {
+    color: #fafafa; /*/Standard for all h2/*/
+
+}
+
 
 /*/////////////////////////*/
 /*////////// HEADER /////////*/
@@ -23,14 +28,14 @@ h2 {
 
 header {
     background-color: #1a1a1a;
-    height: 140px;
+    height: 120px;
     border-bottom: solid 1px #fafafa;
 
 }
 
 .header-logo {
     
-    height: 100px;
+    height: 80px;
     margin: 30px 25px 25px 20px;
     
 }
@@ -56,11 +61,11 @@ header > .icons {
 nav {
     display: none;
     position: absolute;
-    top: 144px;
+    top: 121px;
     width: 100%;
     height: 100%;
     z-index: 99;
-    background-color: #1a1a1a99;
+    background-color: #1A1A1A99;
 }
 
 #hamburger-menu {
@@ -80,18 +85,17 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 50px 0 0 0px; /* Adjust top margin */
+    margin: 50px 0 0 0px; 
 
     
 }
 
 
-
 .nav-cont a {
-    font-size: 30px;
+    font-size: 28px;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 5px;
+    padding-top: 5px;
     width: 300px;
     height: 40px;
     border: none;
@@ -99,17 +103,111 @@ nav {
     color: #fafafa;
     cursor: pointer;
     text-decoration: none; /* Get rid of underline */
-    
-  
 
 }
+
+
+/*/////////////////////////*/
+/*////////// FOOTER ///////*/
+/*/////////////////////////*/
+
+footer {
+    height: 150px;
+    color: #fafafa;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    border-top: solid 1px #fafafa; /*line between main and footer */
+    
+
+
+}
+
+.all-footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foot-container ul {
+    list-style: none;
+    margin-right:  15px;
+    padding-left: 15px
+
+
+}
+.foot-container ul a {
+    color: #fafafa;
+    text-decoration: none;
+    
+}
+
+
+.foot-container {
+    margin-top: 5px;
+    margin: 0 20px;
+}
+
+footer h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px; 
+}
+
+footer p {
+    margin-left: 20px;
+}
+
 /*/////////////////////////*/
 /*/////// MAIN INDEX /////*/
 /*/////////////////////////*/
 
+.bar { /*/Center alignment/*/
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    
+}
+
+#search-bar {
+    color: #fafafa; /*Color change when typing*/
+}
+
+#search-bar::placeholder { /*/Change color on the text/*/
+    color: #fafafa;
+    
+}
+
+#search-bar:focus { /*/To get rid of blue outlines/*/
+    outline: none;
+}
+
+.bar input {
+    background-color: #ff900099;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    text-align: left;
+    width: 145px;
+    height: 25px;
+    padding-left: 30px;
+}
+
+.fa-magnifying-glass { /*//To get the icon inside the searchbar/*/
+    position: absolute;
+    color: #fafafa;
+    margin: 6px;
+}
+
+
+
+
  .add-container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -148,8 +246,8 @@ nav {
 
 }
 
-.add h2 {
-    font-weight: 600;
+.add h1 {
+    font-weight: 800;
     color: #fafafa;
     font-size: 20px;
     max-width: 200px;
@@ -168,6 +266,10 @@ nav {
     
 }
 
+.home-movies h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
 .movie-posters {
     display: grid;
     grid-template-columns: auto auto;
@@ -180,59 +282,6 @@ nav {
 .movie-posters img {
     width: 144px;
     height: 215px;
-}
-
-
-/*/////////////////////////*/
-/*////////// FOOTER ///////*/
-/*/////////////////////////*/
-
-footer {
-    height: 150px;
-    color: #fafafa;
-    background-color: #1a1a1a;
-    width: 100%;
-    font-size: 12px;
-    font-weight: 400;
-    border-top: solid 1px #fafafa; /*line between main and footer */
-    
-
-
-}
-
-.all-footers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.foot-container ul {
-    list-style: none;
-    margin-right:  15px;
-    padding-left: 15px
-
-
-}
-.foot-container ul a {
-    color: #fafafa;
-    text-decoration: none;
-    
-}
-
-
-.foot-container {
-    margin-top: 5px;
-    margin: 0 20px;
-}
-
-footer h2 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px; 
-}
-
-footer p {
-    margin-left: 20px;
 }
 
 
@@ -250,7 +299,7 @@ footer p {
 }
 
 
-.bar { /*/Center alignment/*/
+.bar2 { /*/Center alignment/*/
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -258,20 +307,20 @@ footer p {
     
 }
 
-#search-bar {
+#search-bar2 {
     color: #fafafa; /*Color change when typing*/
 }
 
-#search-bar::placeholder { /*/Change color on the text/*/
+#search-bar2::placeholder { /*/Change color on the text/*/
     color: #fafafa;
     
 }
 
-#search-bar:focus { /*/To get rid of blue outlines/*/
+#search-bar2:focus { /*/To get rid of blue outlines/*/
     outline: none;
 }
 
-.bar input {
+.bar2 input {
     background-color: #ff900099;
     border-radius: 10px;
     border-style: none;
@@ -279,13 +328,13 @@ footer p {
     text-align: left;
     width: 145px;
     height: 25px;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 
 .fa-magnifying-glass { /*//To get the icon inside the searchbar/*/
     position: absolute;
     color: #fafafa;
-    margin: 4px;
+    margin: 6px;
 }
 
 .select-genre {
@@ -348,74 +397,17 @@ footer p {
     
 }
 
-/*/////ABOUT US PAGE/////*/ 
 
-.main-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
-    
-
-}
-.main-about img {
-    width: 354px;
-    height: 236px;
-}
-
-.main-about h1 {
-    font-size: 24px;
-    
-}
-
-main p {
-    color:#fafafa;
-    font-size: 24px;
-    font-weight: 200;
-    display: flex;
-    text-align: left;
-    padding: 10px 65px 10px 65px;
-    
-    
-}
-
-
-/*/////CONTACT US PAGE/////*/ 
-
-.body-contact-us {
-    background-image: url(/Pictures/photo\ family.jpg);
-    
-}
-
-.main-contact {
-    background-color:rgb(26, 26, 26, 0.9);
-    
-}
-
-.contact-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px 10px 10px;
-}
- 
-main h1 {
-    color: white;
-    font-size: 24px;
-}
-
-.main-contact i {
-    color: #fafafa; /*/Icon color/*/
-    font-size: 54px;
-
-}
-.main-contact p {
-    font-size: 24px;
-    font-weight: 200;
-}   
 /*////////////////////////////*/
 /*/////Product detail page////*/
 /*////////////////////////////*/
+
+.main-productdetail {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+}
 
 .batman-product { /*/Aligns h1, image and cta/*/
     display: flex;
@@ -427,11 +419,17 @@ main h1 {
     font-size: 20px;
 }
 
+.batman-background {
+    height: 453px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 121px;
+    z-index: -1;
+}
+
 .batman-background img {
     width: 100%;
-    position: absolute;
-    top: 141px;
-    z-index: -1;
     opacity: 0.2;
 
 }
@@ -461,16 +459,17 @@ main h1 {
 .desctription-box { 
     background-color: #282828;
     width: 100%;
+    max-width: 812px;
     height: 130px;
     margin-top: 80px;
     border-radius: 10px;
-    
+    padding-bottom: 10px;
 
 }
 
 .desctription-box p { /*/Size and padding of text in textbox/*/
     font-size: 12px; 
-    padding: 15px;
+    padding: 10px;
 
 }
 
@@ -479,34 +478,19 @@ main h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    
 }
 
 .batman-trailer h2 {
+    margin-top: 100px;
     font-size: 20px;
     font-weight: 600;
 }
 
-.trailer-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+iframe {
+    margin-bottom: 100px;
 }
 
-.trailer-image img {
-    width: 230px;
-    filter: blur(1px);
-    display: block;
-
-}
-
-.batman-trailer i {
-    font-size: 34px;
-    color: #fafafa;
-    position: absolute;
-    
-    
-}
 
 
 /*////////////////////////////*/
@@ -522,7 +506,7 @@ main h1 {
 .overlay-box-co {
     background-color: #282828;
     width: 338px;
-    height: 842px;
+    height: 860px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -530,6 +514,11 @@ main h1 {
     margin-top: 50px;
     margin-bottom: 50px;
     
+}
+
+.overlay-box-co h1 {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .overlay-box-co p {
@@ -550,6 +539,12 @@ main h1 {
 
 #name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
     text-align: center;
+    
+}
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem input {
+    text-align: left;
+    
 }
 
 
@@ -586,6 +581,48 @@ main h1 {
     color: #fafafa;
     
 }
+
+.total-box {
+    background-color: #1A1A1A;
+    width: 299px;
+    height: 155px;
+    border-radius: 10px;
+    
+    
+}
+
+.upper-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.upper-info img {
+    width: 32px;
+    height: 48px;
+    padding: 10px;
+}
+
+.upper-info p {
+    font-size: 14px;
+    margin: 20px -55px 40px;
+    font-weight: 600;
+    color: #d7d7d7;
+}
+
+.lower-info {
+    border-top: solid 1px white; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.lower-info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
 
 .purchase-button { /*Gets space between the redeem and purchase/*/
     margin-top: 40px;
@@ -645,7 +682,7 @@ main h1 {
     
 }
 
-.total-box {
+.total-box2 {
     background-color: #1A1A1A;
     width: 299px;
     height: 155px;
@@ -654,64 +691,365 @@ main h1 {
     
 }
 
-.upper-info {
+.upper-info2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
 
-.upper-info img {
+.upper-info2 img {
     width: 32px;
     height: 48px;
     padding: 10px;
 }
 
-.upper-info p {
+.upper-info2 p {
     font-size: 14px;
     margin: 20px -55px 40px;
     font-weight: 600;
     color: #d7d7d7;
 }
 
-.lower-info {
+.lower-info2 {
     border-top: solid 1px white; 
     display: flex;
     flex-direction: row;
     justify-content: center; 
 }
 
-.lower-info p {
+.lower-info2 p {
     font-size: 14px;
     font-weight: 600;
 }
 
 
+/*////////////////////////*/
+/*/////ABOUT US PAGE/////*/ 
+/*////////////////////////*/
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    
+
+}
+.main-about img {
+    width: 354px;
+    height: 236px;
+}
+
+.main-about h1 {
+    font-size: 24px;
+    
+}
+
+main p {
+    color:#fafafa;
+    font-size: 24px;
+    font-weight: 200;
+    display: flex;
+    text-align: left;
+    padding: 10px 65px 10px 65px;
+    
+    
+}
+
+/*/////////////////////////*/
+/*/////CONTACT US PAGE/////*/ 
+/*/////////////////////////*/
+
+.body-contact-us {
+    background-image: url(/Pictures/photo\ family.jpg);
+    
+}
+
+.main-contact {
+    background-color:rgb(26, 26, 26, 0.9);
+    
+}
+
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+ 
+.main-contact h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.main-contact i {
+    color: #fafafa; /*/Icon color/*/
+    font-size: 54px;
+
+}
+.main-contact p {
+    font-size: 24px;
+    font-weight: 200;
+} 
 
 
 
 
+/*/////////////////////////*/
+/*///// MEDIA QUARIES /////*/
+/*/////////////////////////*/
+
+@media screen and (min-width: 576px) {
+   body {
+    
+    }
+    
+/*/////////////////////////*/
+/*//////// HEADER /////////*/
+/*/////////////////////////*/
+
+header {
+    height: 140px;
+
+}
+
+.header-logo {
+    
+    height: 100px;
+    margin: 30px 25px 25px 20px;
+    
+}
+
+
+/*/////////////////////////*/
+/*/////// Nav header /////*/
+/*/////////////////////////*/
+
+
+nav {
+    top: 141px;
+
+}
+
+/*/////////////////////////*/
+/*////////// FOOTER ///////*/
+/*/////////////////////////*/
+
+footer {
+    height: 170px;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+
+
+footer h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/*/////////////////////////*/
+/*/////// MAIN INDEX /////*/
+/*/////////////////////////*/
+
+
+
+.bar input {
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    
+}
+
+.fa-magnifying-glass { /*//To get the icon inside the searchbar/*/
+    margin: 8px;
+}
+.add {
+    width: 572px;
+    height: 380px; 
+}
+
+.films-button a {
+    font-size: 20px;
+    
+
+}
+
+.add h1 {
+    font-size: 30px;
+    max-width: 300px;
+       
+}
+
+.movie-posters {
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+.movie-posters img {
+    width: 218px;
+    height: 324px;
+}
+
+.home-movies h2 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+/*/////////////////////////*/
+/*//// ALL MOVIES PAGE ///*/
+/*/////////////////////////*/
 
 
 
 
+.bar2 input {
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    
+}
+
+.fa-magnifying-glass { /*//To get the icon inside the searchbar/*/
+    margin: 8px;
+}
+
+.select-genreh2 {
+    font-size: 18px;
+}
+
+.dropdown label {
+    padding: 2px 20px 2px 20px;
+}
+
+/*////////////////////////////*/
+/*/////Product detail page////*/
+/*////////////////////////////*/
+
+.batman-product h1 {
+    font-size: 24px;
+}
+
+.batman-background {
+    height: 515px;
+    top: 141px;
+}
+
+
+.batman-cover img {
+    width: 218px;
+    height: 324px;
+    
+}
+
+.cart-button a {
+    font-size: 20px;
+    
+    
+}
+
+.desctription-box { 
+    padding-bottom: 20px;
+
+}
+
+.desctription-box p { /*/Size and padding of text in textbox/*/
+    font-size: 14px; 
+    
+    
+
+}
+
+
+.batman-trailer h2 {
+    font-size: 24px;
+}
+
+iframe {
+    width: 560px;
+    height: 308px;
+}
 
 
 
+/*////////////////////////////*/
+/*///// CHECKOUT PAGE ////////*/
+/*////////////////////////////*/
+
+#name, #card, #mmyy, #cvv, #fullname, #address, #zipcode, #city, #phone, #redeem,::placeholder {
+    font-size: 14px;
+    
+}
+
+.overlay-box-co {
+    width: 400px;
+    height: 900px;
+    
+    
+}
+
+.overlay-box-co p {
+    font-size: 14px;
+    
+}
+
+.overlay-box-co h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
 
 
 
+#name, #card, #fullname, #address, #phone {
+    width: 361px;
+    height: 36px;
+   
+}
+
+#mmyy, #cvv, #zipcode, #city, #redeem {
+    width: 171px;
+    height: 36px;
+    
+    
+}
+
+.total-box {
+    width: 361px;
+    height: 158px;  
+}
 
 
+.upper-info img {
+    width: 36px;
+    height: 52px;
+    
+}
+
+.upper-info p {
+    font-size: 16px;
+    margin: 20px -50px 40px;
+}
 
 
+.lower-info p {
+    font-size: 16px;
+}
 
+.purchase-button a {
+    font-size: 20px;
+    
+}
 
+}
 
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue ;
+    }
 
-
-
-
-
-
-
+}
