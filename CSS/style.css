@@ -312,7 +312,7 @@ footer p {
     align-content: center;
 }
 
-.select-genreh2 {
+.select-genre h1 {
     margin-top: 40px;
     font-size: 15px;
 }
@@ -409,7 +409,6 @@ footer p {
     border-radius: 15px;
     padding: 10px 20px 10px 20px;
     border-style: none;
-    cursor: pointer; 
     text-decoration: none;
 }
 
@@ -890,7 +889,7 @@ footer h2 {
     margin: 8px;
 }
 
-.select-genreh2 {
+.select-genre h1 {
     font-size: 18px;
 }
 
@@ -1220,7 +1219,7 @@ footer h2 {
     margin: 9px;
 }
 
-.select-genreh2 {
+.select-genre h1 {
     font-size: 22px;
 }
 
