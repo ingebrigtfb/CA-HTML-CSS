@@ -737,7 +737,9 @@ iframe {
     padding: 10px 30px 10px 30px;
 } 
 
-/* COMING SOON */
+/*///////////////////*/
+/*/// COMING SOON ///*/
+/*///////////////////*/
 
 .coming-soon h1 {
     display: flex;
@@ -767,7 +769,7 @@ iframe {
 
 .coming-soon p {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     padding-left: 50px;
     padding-right: 50px;
 }
