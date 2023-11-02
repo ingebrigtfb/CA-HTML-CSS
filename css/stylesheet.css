@@ -742,43 +742,35 @@ iframe {
 .coming-soon h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 36px;
 }
-
 
 .back-to-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    
 }
 
 .back-to-home a {
     color: #fafafa;
     background-color: #ff9000;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     border-style: none;
     cursor: pointer; 
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .coming-soon p {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.coming-soon ul li {
-    color: #fafafa;
+    font-size: 15px;
+    font-weight: 200;
     padding-left: 50px;
-    padding-right: 100px;
-    
+    padding-right: 50px;
 }
-
-
 
 
 /*///////////////////////////*/
@@ -1080,6 +1072,24 @@ iframe {
     font-size: 26px; 
 }
 
+/*/////////////////////////////*/
+/*//// COMING SOON TABLET /////*/
+/*/////////////////////////////*/
+
+.coming-soon p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.coming-soon h1 {
+    font-size: 40px;
+}
+
+.back-to-home a {
+    font-size: 18px;
+}
 }
 
 /*/////////////////////////*/
@@ -1429,6 +1439,26 @@ iframe {
     
 }
 
+/*////////////////////////////*/
+/*//// COMING SOON DESKTOP ///*/
+/*////////////////////////////*/
+
+
+.coming-soon p {
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+
+.coming-soon h1 {
+    font-size: 42px;
+}
+
+.back-to-home a {
+    font-size: 20px;
+}
+
 }
 
 /*////////////////////////*/
@@ -1483,9 +1513,17 @@ iframe {
         padding-left: 300px;
         padding-right: 300px;
     
-    } 
+    }
 
     body {
         height: 1300px;
+    }
+
+    .coming-soon p {
+        font-size: 28px;
+        font-weight: 200;
+        padding-left: 150px;
+        padding-right: 150px;
+        
     }
 }    
